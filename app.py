@@ -260,13 +260,98 @@ TABLE_HEADER = (
     "</tr></thead><tbody>"
 )
 
+CATALOG_TABLE_HEADER = (
+    "<table style='width:100%;border-collapse:collapse;font-size:0.88em'>"
+    "<thead><tr style='border-bottom:1px solid #ccc'>"
+    "<th style='width:140px'>Nome</th>"
+    "<th style='width:90px'>Tipo</th>"
+    "<th style='width:60px'>Cat</th>"
+    "<th style='width:50px;text-align:center'>Pow</th>"
+    "<th style='width:50px;text-align:center'>Acc</th>"
+    "<th style='width:40px;text-align:center'>PP</th>"
+    "<th>Descrição</th>"
+    "</tr></thead><tbody>"
+)
+
+
+def catalog_move_row_html(move_id: str, info: dict) -> str:
+    name = info.get("name", move_id)
+    type_str = info.get("type", "Unknown")
+    cat_str = info.get("category", "Unknown")
+    power = info.get("power", 0)
+    accuracy = info.get("accuracy", 0)
+    pp = info.get("pp", 0)
+    description = info.get("description", "")
+    return (
+        f"<tr>"
+        f"<td style='width:140px'><b>{name}</b></td>"
+        f"<td style='width:90px'>{type_badge(type_str)}</td>"
+        f"<td style='width:60px'>{cat_badge(cat_str)}</td>"
+        f"<td style='width:50px;text-align:center'>{power if power else '—'}</td>"
+        f"<td style='width:50px;text-align:center'>{accuracy if accuracy else '—'}</td>"
+        f"<td style='width:40px;text-align:center'>{pp if pp else '—'}</td>"
+        f"<td style='font-size:0.80em;color:#555'>{description}</td>"
+        f"</tr>"
+    )
+
+
+def render_catalog(moves_info: dict):
+    all_types = sorted({info.get("type", "Unknown") for info in moves_info.values()})
+    type_options = ["Todos"] + all_types
+
+    if "catalog_type" not in st.session_state:
+        st.session_state.catalog_type = "Todos"
+
+    # Type selector — inline pills via st.pills (no line breaks)
+    selected_type = st.pills(
+        "Tipo",
+        type_options,
+        default=st.session_state.catalog_type,
+        key="catalog_type_pills",
+        label_visibility="collapsed",
+    )
+    if selected_type is not None:
+        st.session_state.catalog_type = selected_type
+    else:
+        selected_type = st.session_state.catalog_type
+
+    # Search by move name
+    search = st.text_input("Search", placeholder="Search by Move name", label_visibility="collapsed")
+
+    st.markdown("---")
+
+    # Filter by type
+    if selected_type == "Todos":
+        filtered = moves_info
+    else:
+        filtered = {k: v for k, v in moves_info.items() if v.get("type") == selected_type}
+
+    # Filter by search
+    if search:
+        q = search.lower()
+        filtered = {k: v for k, v in filtered.items() if q in v.get("name", "").lower()}
+
+    for category in ("Physical", "Special", "Status"):
+        cat_moves = {k: v for k, v in filtered.items() if v.get("category") == category}
+        if not cat_moves:
+            continue
+
+        if category == "Status":
+            sorted_moves = sorted(cat_moves.items(), key=lambda x: x[1].get("name", ""))
+        else:
+            sorted_moves = sorted(cat_moves.items(), key=lambda x: x[1].get("power", 0))
+
+        with st.expander(f"{category} — {len(sorted_moves)} moves", expanded=True):
+            rows = "".join(catalog_move_row_html(mid, info) for mid, info in sorted_moves)
+            st.markdown(CATALOG_TABLE_HEADER + rows + "</tbody></table>", unsafe_allow_html=True)
+
 
 # ---------------------------------------------------------------------------
 # Main app
 # ---------------------------------------------------------------------------
 def main():
     st.set_page_config(page_title="pokerelearner", layout="wide")
-    st.title("pokerelearner — Level-up Learnset Editor")
+    st.title("Level-up Learnset Editor")
 
     if not SNAPSHOT_LEARNSETS.exists() or not SNAPSHOT_MOVES.exists():
         st.error("Snapshots not found. Run `make snapshot` first.")
@@ -282,104 +367,110 @@ def main():
     if "dirty" not in st.session_state:
         st.session_state.dirty = False
 
-    # --- Pokémon selector ---
-    available = [p for p in POKEMON_LIST if p in snapshot]
-    selected = st.selectbox("Pokémon", available)
+    tab_learnsets, tab_catalog = st.tabs(["Learnsets", "Move Catalog"])
 
-    original_moves = snapshot.get(selected, [])
-    current_moves = st.session_state.current.get(selected, copy.deepcopy(original_moves))
+    with tab_catalog:
+        render_catalog(moves_info)
 
-    # Ensure current has an entry for this Pokémon
-    if selected not in st.session_state.current:
-        st.session_state.current[selected] = copy.deepcopy(original_moves)
-        current_moves = st.session_state.current[selected]
+    with tab_learnsets:
+        # --- Pokémon selector ---
+        available = [p for p in POKEMON_LIST if p in snapshot]
+        selected = st.selectbox("Pokémon", available)
 
-    orig_set = [(e["level"], e["move"]) for e in original_moves]
+        original_moves = snapshot.get(selected, [])
+        current_moves = st.session_state.current.get(selected, copy.deepcopy(original_moves))
 
-    # --- Original vs Atual side by side ---
-    col_orig, col_curr = st.columns(2)
+        # Ensure current has an entry for this Pokémon
+        if selected not in st.session_state.current:
+            st.session_state.current[selected] = copy.deepcopy(original_moves)
+            current_moves = st.session_state.current[selected]
 
-    with col_orig:
-        st.subheader("Original (snapshot)")
-        rows = "".join(move_row_html(e, moves_info) for e in original_moves)
-        st.markdown(TABLE_HEADER + rows + "</tbody></table>", unsafe_allow_html=True)
+        orig_set = [(e["level"], e["move"]) for e in original_moves]
 
-    with col_curr:
-        st.subheader("Atual")
-        rows_html = ""
-        for entry in current_moves:
-            is_changed = (entry["level"], entry["move"]) not in orig_set
-            rows_html += move_row_html(entry, moves_info, highlight=is_changed)
-        st.markdown(TABLE_HEADER + rows_html + "</tbody></table>", unsafe_allow_html=True)
+        # --- Original vs Atual side by side ---
+        col_orig, col_curr = st.columns(2)
 
-    # --- Editable area below ---
-    st.markdown("---")
-    st.subheader("Editar moveset")
+        with col_orig:
+            st.subheader("Original (snapshot)")
+            rows = "".join(move_row_html(e, moves_info) for e in original_moves)
+            st.markdown(TABLE_HEADER + rows + "</tbody></table>", unsafe_allow_html=True)
 
-    def sync_edits():
-        """Read all widget values and write directly into session state."""
-        moves = st.session_state.current.get(selected, [])
-        updated = []
-        for i in range(len(moves)):
-            lv_key = f"lv_{selected}_{i}"
-            mv_key = f"mv_{selected}_{i}"
-            if lv_key in st.session_state and mv_key in st.session_state:
-                updated.append({
-                    "level": st.session_state[lv_key],
-                    "move": st.session_state[mv_key],
-                })
-        st.session_state.current[selected] = updated
-        st.session_state.dirty = True
+        with col_curr:
+            st.subheader("Atual")
+            rows_html = ""
+            for entry in current_moves:
+                is_changed = (entry["level"], entry["move"]) not in orig_set
+                rows_html += move_row_html(entry, moves_info, highlight=is_changed)
+            st.markdown(TABLE_HEADER + rows_html + "</tbody></table>", unsafe_allow_html=True)
 
-    rows_to_delete = []
+        # --- Editable area below ---
+        st.markdown("---")
+        st.subheader("Editar moveset")
 
-    for i, entry in enumerate(current_moves):
-        c_lv, c_move, c_del = st.columns([1, 4, 1])
-        with c_lv:
-            st.number_input(
-                "Lv", min_value=0, max_value=100,
-                value=entry["level"], key=f"lv_{selected}_{i}",
-                label_visibility="collapsed",
-                on_change=sync_edits,
-            )
-        with c_move:
-            idx = all_move_ids.index(entry["move"]) if entry["move"] in all_move_ids else 0
-            st.selectbox(
-                "Move", all_move_ids, index=idx,
-                key=f"mv_{selected}_{i}",
-                label_visibility="collapsed",
-                on_change=sync_edits,
-            )
-        with c_del:
-            if st.button("✕", key=f"del_{selected}_{i}", help="Remover"):
-                rows_to_delete.append(i)
+        def sync_edits():
+            """Read all widget values and write directly into session state."""
+            moves = st.session_state.current.get(selected, [])
+            updated = []
+            for i in range(len(moves)):
+                lv_key = f"lv_{selected}_{i}"
+                mv_key = f"mv_{selected}_{i}"
+                if lv_key in st.session_state and mv_key in st.session_state:
+                    updated.append({
+                        "level": st.session_state[lv_key],
+                        "move": st.session_state[mv_key],
+                    })
+            st.session_state.current[selected] = updated
+            st.session_state.dirty = True
 
-    if rows_to_delete:
-        updated = [e for i, e in enumerate(st.session_state.current[selected]) if i not in rows_to_delete]
-        st.session_state.current[selected] = updated
-        st.session_state.dirty = True
-        st.rerun()
+        rows_to_delete = []
 
-    if st.button("＋ Adicionar move"):
-        st.session_state.current[selected].append({"level": 1, "move": "MOVE_TACKLE"})
-        st.session_state.dirty = True
-        st.rerun()
+        for i, entry in enumerate(current_moves):
+            c_lv, c_move, c_del = st.columns([1, 4, 1])
+            with c_lv:
+                st.number_input(
+                    "Lv", min_value=0, max_value=100,
+                    value=entry["level"], key=f"lv_{selected}_{i}",
+                    label_visibility="collapsed",
+                    on_change=sync_edits,
+                )
+            with c_move:
+                idx = all_move_ids.index(entry["move"]) if entry["move"] in all_move_ids else 0
+                st.selectbox(
+                    "Move", all_move_ids, index=idx,
+                    key=f"mv_{selected}_{i}",
+                    label_visibility="collapsed",
+                    on_change=sync_edits,
+                )
+            with c_del:
+                if st.button("✕", key=f"del_{selected}_{i}", help="Remover"):
+                    rows_to_delete.append(i)
 
-    # --- Save / Export ---
-    st.markdown("---")
-    c1, c2, c3 = st.columns([2, 2, 6])
-    with c1:
-        if st.button("💾 Salvar edições", disabled=not st.session_state.dirty):
-            save_current(st.session_state.current)
-            st.session_state.dirty = False
-            st.success("Salvo em data/current_learnsets.json")
+        if rows_to_delete:
+            updated = [e for i, e in enumerate(st.session_state.current[selected]) if i not in rows_to_delete]
+            st.session_state.current[selected] = updated
+            st.session_state.dirty = True
+            st.rerun()
 
-    with c2:
-        if st.button("📤 Exportar gen_9.h"):
-            export_gen9(st.session_state.current)
+        if st.button("＋ Adicionar move"):
+            st.session_state.current[selected].append({"level": 1, "move": "MOVE_TACKLE"})
+            st.session_state.dirty = True
+            st.rerun()
 
-    if st.session_state.dirty:
-        st.caption("⚠ Há alterações não salvas.")
+        # --- Save / Export ---
+        st.markdown("---")
+        c1, c2, c3 = st.columns([2, 2, 6])
+        with c1:
+            if st.button("💾 Salvar edições", disabled=not st.session_state.dirty):
+                save_current(st.session_state.current)
+                st.session_state.dirty = False
+                st.success("Salvo em data/current_learnsets.json")
+
+        with c2:
+            if st.button("📤 Exportar gen_9.h"):
+                export_gen9(st.session_state.current)
+
+        if st.session_state.dirty:
+            st.caption("⚠ Há alterações não salvas.")
 
 
 if __name__ == "__main__":
