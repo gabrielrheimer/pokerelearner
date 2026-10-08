@@ -5,6 +5,7 @@ Streamlit UI: view original vs current moveset, edit, export gen_9.h patch.
 import json
 import re
 import copy
+import base64
 from pathlib import Path
 
 import streamlit as st
@@ -15,6 +16,9 @@ import streamlit as st
 BASE = Path(__file__).parent
 SNAPSHOT_LEARNSETS = BASE / "data/snapshot/gen_9_learnsets.json"
 SNAPSHOT_MOVES = BASE / "data/snapshot/moves_info.json"
+SNAPSHOT_ABILITIES = BASE / "data/snapshot/abilities_info.json"
+SNAPSHOT_ABILITY_MONS = BASE / "data/snapshot/ability_mons.json"
+ICON_DIR = BASE / "data/icons"
 CURRENT_FILE = BASE / "data/current_learnsets.json"
 REPO = BASE.parent / "fire-red-repainted"
 GEN9_SOURCE = REPO / "src/data/pokemon/level_up_learnsets/gen_9.h"
@@ -153,6 +157,30 @@ def load_moves_info() -> dict:
     if not SNAPSHOT_MOVES.exists():
         return {}
     return json.loads(SNAPSHOT_MOVES.read_text())
+
+
+@st.cache_data
+def load_abilities_info() -> dict:
+    if not SNAPSHOT_ABILITIES.exists():
+        return {}
+    return json.loads(SNAPSHOT_ABILITIES.read_text())
+
+
+@st.cache_data
+def load_ability_mons() -> dict:
+    if not SNAPSHOT_ABILITY_MONS.exists():
+        return {}
+    return json.loads(SNAPSHOT_ABILITY_MONS.read_text())
+
+
+@st.cache_data
+def icon_data_uri(slug: str) -> str:
+    """Base64 data URI for a species icon PNG (Streamlit HTML can't load file paths)."""
+    path = ICON_DIR / f"{slug}.png"
+    if not path.exists():
+        return ""
+    b64 = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"data:image/png;base64,{b64}"
 
 
 def load_current() -> dict:
@@ -346,6 +374,144 @@ def render_catalog(moves_info: dict):
             st.markdown(CATALOG_TABLE_HEADER + rows + "</tbody></table>", unsafe_allow_html=True)
 
 
+ABILITY_TABLE_HEADER = (
+    "<table style='width:100%;border-collapse:collapse;font-size:0.88em'>"
+    "<thead><tr style='border-bottom:1px solid #ccc'>"
+    "<th style='width:150px'>Name</th>"
+    "<th>Description</th>"
+    "<th style='width:200px'>Pokémon</th>"
+    "</tr></thead><tbody>"
+)
+
+
+def _mon_icons_html(mons: list) -> str:
+    """Row of species icons for an ability. Fallback (other-gen) mons are dimmed."""
+    imgs = []
+    for m in mons:
+        uri = icon_data_uri(m.get("icon", ""))
+        if not uri:
+            continue
+        fallback = m.get("fallback", False)
+        title = m["name"] + (" (other gen)" if fallback else "")
+        style = "width:32px;height:32px;vertical-align:middle;"
+        if fallback:
+            style += "opacity:0.45;"
+        imgs.append(f"<img src='{uri}' title='{title}' alt='{m['name']}' style='{style}'>")
+    return "".join(imgs)
+
+
+def ability_row_html(info: dict, mons: list) -> str:
+    name = info.get("name", "")
+    description = info.get("description", "")
+    return (
+        f"<tr>"
+        f"<td style='width:150px'><b>{name}</b></td>"
+        f"<td style='font-size:0.80em;color:#555'>{description}</td>"
+        f"<td style='width:200px'>{_mon_icons_html(mons)}</td>"
+        f"</tr>"
+    )
+
+
+UNGROUPED_LABEL = "Ungrouped"
+
+# Thematic display order for ability groups (expanders + pills). Groups not listed
+# here fall to the end, alphabetically. Double Battles is intentionally last.
+GROUP_ORDER = [
+    # Offensive buffs
+    "Plain Stat or Move Buffs", "Plain Type Buffs", "Move Type Changer", "Self Type Change",
+    # Trigger-based
+    "On Entering Battle", "On Knocking Out", "On Being Knocked Out", "On Switch Out",
+    "Low HP / Pinch", "Status Reaction", "Buffs when with status",
+    # Contact
+    "On Making Contact", "On Receiving Contact",
+    # Defensive
+    "Immunity to Types", "Immunity to Moves", "Immunity to Status",
+    "Resistance to Moves or Types", "Protection from Status or Stat Changes",
+    # Field / environment
+    "Weather - Generic", "Weather - Rain", "Weather - Sun", "Weather - Sandstorm",
+    "Weather - Hail", "Terrains",
+    # Utility / misc
+    "Priority Modifiers", "Ignores Opponent", "Item Interaction", "Ability Change", "Weight",
+    # Team (collapsed by default)
+    "Double Battles",
+]
+
+
+def _ability_table(members: list) -> str:
+    """members: list of (info, mons) tuples."""
+    rows = "".join(ability_row_html(info, mons) for info, mons in members)
+    return ABILITY_TABLE_HEADER + rows + "</tbody></table>"
+
+
+def render_ability_catalog(abilities_info: dict):
+    ability_mons = load_ability_mons()
+    present = {v["group"] for v in abilities_info.values() if v.get("group")}
+    # Thematic order (GROUP_ORDER); any group not listed falls to the end, alphabetically.
+    order_index = {g: i for i, g in enumerate(GROUP_ORDER)}
+    all_groups = sorted(present, key=lambda g: (order_index.get(g, len(GROUP_ORDER)), g))
+    group_options = ["All", UNGROUPED_LABEL] + all_groups
+
+    if "ability_group" not in st.session_state:
+        st.session_state.ability_group = "All"
+
+    # Group selector — inline pills (no line breaks)
+    selected_group = st.pills(
+        "Group",
+        group_options,
+        default=st.session_state.ability_group,
+        key="ability_group_pills",
+        label_visibility="collapsed",
+    )
+    if selected_group is not None:
+        st.session_state.ability_group = selected_group
+    else:
+        selected_group = st.session_state.ability_group
+
+    # Search by name or description
+    search = st.text_input(
+        "Search", placeholder="Search by Ability name or effect",
+        label_visibility="collapsed", key="ability_search",
+    )
+    st.markdown("---")
+
+    # Filter by search first (keep ability ids so we can look up mons)
+    items = list(abilities_info.items())
+    if search:
+        q = search.lower()
+        items = [
+            (k, v) for k, v in items
+            if q in v.get("name", "").lower() or q in v.get("description", "").lower()
+        ]
+
+    def members_for(predicate) -> list:
+        picked = [(k, v) for k, v in items if predicate(v)]
+        picked.sort(key=lambda kv: kv[1].get("name", ""))
+        return [(v, ability_mons.get(k, [])) for k, v in picked]
+
+    if selected_group == "All":
+        # Ungrouped first (expanded), then each group (Double Battles last).
+        ungrouped = members_for(lambda v: not v.get("group"))
+        if ungrouped:
+            with st.expander(UNGROUPED_LABEL, expanded=True):
+                st.markdown(_ability_table(ungrouped), unsafe_allow_html=True)
+
+        for group in all_groups:
+            members = members_for(lambda v, g=group: v.get("group") == g)
+            if not members:
+                continue
+            with st.expander(group, expanded=(group != "Double Battles")):
+                st.markdown(_ability_table(members), unsafe_allow_html=True)
+        return
+
+    # A single group (or Ungrouped) is selected.
+    if selected_group == UNGROUPED_LABEL:
+        members = members_for(lambda v: not v.get("group"))
+    else:
+        members = members_for(lambda v, g=selected_group: v.get("group") == g)
+
+    st.markdown(_ability_table(members), unsafe_allow_html=True)
+
+
 # ---------------------------------------------------------------------------
 # Main app
 # ---------------------------------------------------------------------------
@@ -359,6 +525,7 @@ def main():
 
     snapshot = load_snapshot_learnsets()
     moves_info = load_moves_info()
+    abilities_info = load_abilities_info()
     all_move_ids = sorted(moves_info.keys())
 
     # Session state: current learnsets + unsaved edits flag
@@ -367,10 +534,15 @@ def main():
     if "dirty" not in st.session_state:
         st.session_state.dirty = False
 
-    tab_learnsets, tab_catalog = st.tabs(["Learnsets", "Move Catalog"])
+    tab_learnsets, tab_catalog, tab_abilities = st.tabs(
+        ["Learnsets", "Move Catalog", "Ability Catalog"]
+    )
 
     with tab_catalog:
         render_catalog(moves_info)
+
+    with tab_abilities:
+        render_ability_catalog(abilities_info)
 
     with tab_learnsets:
         # --- Pokémon selector ---

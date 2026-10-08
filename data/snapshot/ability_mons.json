@@ -1,0 +1,3850 @@
+{
+  "ABILITY_STENCH": [
+    {
+      "name": "Gloom",
+      "icon": "gloom"
+    },
+    {
+      "name": "Grimer",
+      "icon": "grimer"
+    },
+    {
+      "name": "Muk",
+      "icon": "muk"
+    },
+    {
+      "name": "Koffing",
+      "icon": "koffing"
+    },
+    {
+      "name": "Weezing",
+      "icon": "weezing"
+    }
+  ],
+  "ABILITY_DRIZZLE": [
+    {
+      "name": "Politoed",
+      "icon": "politoed"
+    }
+  ],
+  "ABILITY_SPEED_BOOST": [
+    {
+      "name": "Yanma",
+      "icon": "yanma",
+      "fallback": true
+    },
+    {
+      "name": "Yanmega",
+      "icon": "yanmega",
+      "fallback": true
+    },
+    {
+      "name": "Torchic",
+      "icon": "torchic",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BATTLE_ARMOR": [
+    {
+      "name": "Cubone",
+      "icon": "cubone"
+    },
+    {
+      "name": "Marowak",
+      "icon": "marowak"
+    },
+    {
+      "name": "Kabuto",
+      "icon": "kabuto"
+    },
+    {
+      "name": "Kabutops",
+      "icon": "kabutops"
+    }
+  ],
+  "ABILITY_STURDY": [
+    {
+      "name": "Geodude",
+      "icon": "geodude"
+    },
+    {
+      "name": "Graveler",
+      "icon": "graveler"
+    },
+    {
+      "name": "Golem",
+      "icon": "golem"
+    },
+    {
+      "name": "Magnemite",
+      "icon": "magnemite"
+    },
+    {
+      "name": "Magneton",
+      "icon": "magneton"
+    },
+    {
+      "name": "Onix",
+      "icon": "onix"
+    },
+    {
+      "name": "Steelix",
+      "icon": "steelix"
+    }
+  ],
+  "ABILITY_DAMP": [
+    {
+      "name": "Paras",
+      "icon": "paras"
+    },
+    {
+      "name": "Parasect",
+      "icon": "parasect"
+    },
+    {
+      "name": "Psyduck",
+      "icon": "psyduck"
+    },
+    {
+      "name": "Golduck",
+      "icon": "golduck"
+    },
+    {
+      "name": "Poliwag",
+      "icon": "poliwag"
+    },
+    {
+      "name": "Poliwhirl",
+      "icon": "poliwhirl"
+    },
+    {
+      "name": "Poliwrath",
+      "icon": "poliwrath"
+    },
+    {
+      "name": "Politoed",
+      "icon": "politoed"
+    },
+    {
+      "name": "Horsea",
+      "icon": "horsea"
+    },
+    {
+      "name": "Seadra",
+      "icon": "seadra"
+    },
+    {
+      "name": "Kingdra",
+      "icon": "kingdra"
+    }
+  ],
+  "ABILITY_LIMBER": [
+    {
+      "name": "Persian",
+      "icon": "persian"
+    },
+    {
+      "name": "Hitmonlee",
+      "icon": "hitmonlee"
+    },
+    {
+      "name": "Ditto",
+      "icon": "ditto"
+    }
+  ],
+  "ABILITY_SAND_VEIL": [
+    {
+      "name": "Sandshrew",
+      "icon": "sandshrew"
+    },
+    {
+      "name": "Sandslash",
+      "icon": "sandslash"
+    },
+    {
+      "name": "Diglett",
+      "icon": "diglett"
+    },
+    {
+      "name": "Dugtrio",
+      "icon": "dugtrio"
+    },
+    {
+      "name": "Geodude",
+      "icon": "geodude"
+    },
+    {
+      "name": "Graveler",
+      "icon": "graveler"
+    },
+    {
+      "name": "Golem",
+      "icon": "golem"
+    }
+  ],
+  "ABILITY_STATIC": [
+    {
+      "name": "Pichu",
+      "icon": "pichu"
+    },
+    {
+      "name": "Pikachu",
+      "icon": "pikachu"
+    },
+    {
+      "name": "Raichu",
+      "icon": "raichu"
+    },
+    {
+      "name": "Voltorb",
+      "icon": "voltorb"
+    },
+    {
+      "name": "Electrode",
+      "icon": "electrode"
+    },
+    {
+      "name": "Electabuzz",
+      "icon": "electabuzz"
+    },
+    {
+      "name": "Zapdos",
+      "icon": "zapdos"
+    },
+    {
+      "name": "Elekid",
+      "icon": "elekid"
+    }
+  ],
+  "ABILITY_VOLT_ABSORB": [
+    {
+      "name": "Jolteon",
+      "icon": "jolteon"
+    }
+  ],
+  "ABILITY_WATER_ABSORB": [
+    {
+      "name": "Poliwag",
+      "icon": "poliwag"
+    },
+    {
+      "name": "Poliwhirl",
+      "icon": "poliwhirl"
+    },
+    {
+      "name": "Poliwrath",
+      "icon": "poliwrath"
+    },
+    {
+      "name": "Politoed",
+      "icon": "politoed"
+    },
+    {
+      "name": "Lapras",
+      "icon": "lapras"
+    },
+    {
+      "name": "Vaporeon",
+      "icon": "vaporeon"
+    }
+  ],
+  "ABILITY_OBLIVIOUS": [
+    {
+      "name": "Slowpoke",
+      "icon": "slowpoke"
+    },
+    {
+      "name": "Slowbro",
+      "icon": "slowbro"
+    },
+    {
+      "name": "Slowking",
+      "icon": "slowking"
+    },
+    {
+      "name": "Lickitung",
+      "icon": "lickitung"
+    },
+    {
+      "name": "Jynx",
+      "icon": "jynx"
+    },
+    {
+      "name": "Smoochum",
+      "icon": "smoochum"
+    }
+  ],
+  "ABILITY_CLOUD_NINE": [
+    {
+      "name": "Psyduck",
+      "icon": "psyduck"
+    },
+    {
+      "name": "Golduck",
+      "icon": "golduck"
+    },
+    {
+      "name": "Lickitung",
+      "icon": "lickitung"
+    }
+  ],
+  "ABILITY_COMPOUND_EYES": [
+    {
+      "name": "Butterfree",
+      "icon": "butterfree"
+    },
+    {
+      "name": "Venonat",
+      "icon": "venonat"
+    }
+  ],
+  "ABILITY_INSOMNIA": [
+    {
+      "name": "Drowzee",
+      "icon": "drowzee"
+    },
+    {
+      "name": "Hypno",
+      "icon": "hypno"
+    }
+  ],
+  "ABILITY_COLOR_CHANGE": [
+    {
+      "name": "Kecleon",
+      "icon": "kecleon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_IMMUNITY": [
+    {
+      "name": "Snorlax",
+      "icon": "snorlax"
+    }
+  ],
+  "ABILITY_FLASH_FIRE": [
+    {
+      "name": "Vulpix",
+      "icon": "vulpix"
+    },
+    {
+      "name": "Ninetales",
+      "icon": "ninetales"
+    },
+    {
+      "name": "Growlithe",
+      "icon": "growlithe"
+    },
+    {
+      "name": "Arcanine",
+      "icon": "arcanine"
+    },
+    {
+      "name": "Ponyta",
+      "icon": "ponyta"
+    },
+    {
+      "name": "Rapidash",
+      "icon": "rapidash"
+    },
+    {
+      "name": "Flareon",
+      "icon": "flareon"
+    }
+  ],
+  "ABILITY_SHIELD_DUST": [
+    {
+      "name": "Caterpie",
+      "icon": "caterpie"
+    },
+    {
+      "name": "Weedle",
+      "icon": "weedle"
+    },
+    {
+      "name": "Venomoth",
+      "icon": "venomoth"
+    }
+  ],
+  "ABILITY_OWN_TEMPO": [
+    {
+      "name": "Slowpoke",
+      "icon": "slowpoke"
+    },
+    {
+      "name": "Slowbro",
+      "icon": "slowbro"
+    },
+    {
+      "name": "Slowking",
+      "icon": "slowking"
+    },
+    {
+      "name": "Lickitung",
+      "icon": "lickitung"
+    }
+  ],
+  "ABILITY_SUCTION_CUPS": [
+    {
+      "name": "Octillery",
+      "icon": "octillery",
+      "fallback": true
+    },
+    {
+      "name": "Lileep",
+      "icon": "lileep",
+      "fallback": true
+    },
+    {
+      "name": "Cradily",
+      "icon": "cradily",
+      "fallback": true
+    }
+  ],
+  "ABILITY_INTIMIDATE": [
+    {
+      "name": "Ekans",
+      "icon": "ekans"
+    },
+    {
+      "name": "Arbok",
+      "icon": "arbok"
+    },
+    {
+      "name": "Growlithe",
+      "icon": "growlithe"
+    },
+    {
+      "name": "Arcanine",
+      "icon": "arcanine"
+    },
+    {
+      "name": "Hitmontop",
+      "icon": "hitmontop"
+    },
+    {
+      "name": "Tauros",
+      "icon": "tauros"
+    },
+    {
+      "name": "Gyarados",
+      "icon": "gyarados"
+    }
+  ],
+  "ABILITY_SHADOW_TAG": [
+    {
+      "name": "Gengar",
+      "icon": "gengar_mega",
+      "fallback": true
+    },
+    {
+      "name": "Wynaut",
+      "icon": "wynaut",
+      "fallback": true
+    },
+    {
+      "name": "Wobbuffet",
+      "icon": "wobbuffet",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ROUGH_SKIN": [
+    {
+      "name": "Carvanha",
+      "icon": "carvanha",
+      "fallback": true
+    },
+    {
+      "name": "Sharpedo",
+      "icon": "sharpedo",
+      "fallback": true
+    },
+    {
+      "name": "Gible",
+      "icon": "gible",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WONDER_GUARD": [
+    {
+      "name": "Shedinja",
+      "icon": "shedinja",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LEVITATE": [
+    {
+      "name": "Gastly",
+      "icon": "gastly"
+    },
+    {
+      "name": "Haunter",
+      "icon": "haunter"
+    },
+    {
+      "name": "Koffing",
+      "icon": "koffing"
+    },
+    {
+      "name": "Weezing",
+      "icon": "weezing"
+    }
+  ],
+  "ABILITY_EFFECT_SPORE": [
+    {
+      "name": "Vileplume",
+      "icon": "vileplume"
+    },
+    {
+      "name": "Paras",
+      "icon": "paras"
+    },
+    {
+      "name": "Parasect",
+      "icon": "parasect"
+    }
+  ],
+  "ABILITY_SYNCHRONIZE": [
+    {
+      "name": "Abra",
+      "icon": "abra"
+    },
+    {
+      "name": "Kadabra",
+      "icon": "kadabra"
+    },
+    {
+      "name": "Alakazam",
+      "icon": "alakazam"
+    },
+    {
+      "name": "Espeon",
+      "icon": "espeon"
+    },
+    {
+      "name": "Umbreon",
+      "icon": "umbreon"
+    },
+    {
+      "name": "Mew",
+      "icon": "mew"
+    }
+  ],
+  "ABILITY_CLEAR_BODY": [
+    {
+      "name": "Tentacool",
+      "icon": "tentacool"
+    },
+    {
+      "name": "Tentacruel",
+      "icon": "tentacruel"
+    }
+  ],
+  "ABILITY_NATURAL_CURE": [
+    {
+      "name": "Chansey",
+      "icon": "chansey"
+    },
+    {
+      "name": "Blissey",
+      "icon": "blissey"
+    },
+    {
+      "name": "Staryu",
+      "icon": "staryu"
+    },
+    {
+      "name": "Starmie",
+      "icon": "starmie"
+    }
+  ],
+  "ABILITY_LIGHTNING_ROD": [
+    {
+      "name": "Pichu",
+      "icon": "pichu"
+    },
+    {
+      "name": "Pikachu",
+      "icon": "pikachu"
+    },
+    {
+      "name": "Raichu",
+      "icon": "raichu"
+    },
+    {
+      "name": "Cubone",
+      "icon": "cubone"
+    },
+    {
+      "name": "Marowak",
+      "icon": "marowak"
+    },
+    {
+      "name": "Rhyhorn",
+      "icon": "rhyhorn"
+    },
+    {
+      "name": "Rhydon",
+      "icon": "rhydon"
+    },
+    {
+      "name": "Goldeen",
+      "icon": "goldeen"
+    },
+    {
+      "name": "Seaking",
+      "icon": "seaking"
+    }
+  ],
+  "ABILITY_SERENE_GRACE": [
+    {
+      "name": "Chansey",
+      "icon": "chansey"
+    },
+    {
+      "name": "Blissey",
+      "icon": "blissey"
+    },
+    {
+      "name": "Togepi",
+      "icon": "togepi"
+    },
+    {
+      "name": "Togetic",
+      "icon": "togetic"
+    }
+  ],
+  "ABILITY_SWIFT_SWIM": [
+    {
+      "name": "Psyduck",
+      "icon": "psyduck"
+    },
+    {
+      "name": "Golduck",
+      "icon": "golduck"
+    },
+    {
+      "name": "Poliwag",
+      "icon": "poliwag"
+    },
+    {
+      "name": "Poliwhirl",
+      "icon": "poliwhirl"
+    },
+    {
+      "name": "Poliwrath",
+      "icon": "poliwrath"
+    },
+    {
+      "name": "Horsea",
+      "icon": "horsea"
+    },
+    {
+      "name": "Kingdra",
+      "icon": "kingdra"
+    },
+    {
+      "name": "Goldeen",
+      "icon": "goldeen"
+    },
+    {
+      "name": "Seaking",
+      "icon": "seaking"
+    },
+    {
+      "name": "Magikarp",
+      "icon": "magikarp"
+    },
+    {
+      "name": "Omanyte",
+      "icon": "omanyte"
+    },
+    {
+      "name": "Omastar",
+      "icon": "omastar"
+    },
+    {
+      "name": "Kabuto",
+      "icon": "kabuto"
+    },
+    {
+      "name": "Kabutops",
+      "icon": "kabutops"
+    }
+  ],
+  "ABILITY_CHLOROPHYLL": [
+    {
+      "name": "Bulbasaur",
+      "icon": "bulbasaur"
+    },
+    {
+      "name": "Ivysaur",
+      "icon": "ivysaur"
+    },
+    {
+      "name": "Venusaur",
+      "icon": "venusaur"
+    },
+    {
+      "name": "Oddish",
+      "icon": "oddish"
+    },
+    {
+      "name": "Gloom",
+      "icon": "gloom"
+    },
+    {
+      "name": "Vileplume",
+      "icon": "vileplume"
+    },
+    {
+      "name": "Bellossom",
+      "icon": "bellossom"
+    },
+    {
+      "name": "Bellsprout",
+      "icon": "bellsprout"
+    },
+    {
+      "name": "Weepinbell",
+      "icon": "weepinbell"
+    },
+    {
+      "name": "Victreebel",
+      "icon": "victreebel"
+    },
+    {
+      "name": "Exeggcute",
+      "icon": "exeggcute"
+    },
+    {
+      "name": "Exeggutor",
+      "icon": "exeggutor"
+    },
+    {
+      "name": "Tangela",
+      "icon": "tangela"
+    }
+  ],
+  "ABILITY_TRACE": [
+    {
+      "name": "Porygon",
+      "icon": "porygon"
+    }
+  ],
+  "ABILITY_HUGE_POWER": [
+    {
+      "name": "Starmie",
+      "icon": "starmie_mega",
+      "fallback": true
+    },
+    {
+      "name": "Azurill",
+      "icon": "azurill",
+      "fallback": true
+    },
+    {
+      "name": "Marill",
+      "icon": "marill",
+      "fallback": true
+    }
+  ],
+  "ABILITY_POISON_POINT": [
+    {
+      "name": "NidoranF",
+      "icon": "nidoran_f"
+    },
+    {
+      "name": "Nidorina",
+      "icon": "nidorina"
+    },
+    {
+      "name": "Nidoqueen",
+      "icon": "nidoqueen"
+    },
+    {
+      "name": "NidoranM",
+      "icon": "nidoran_m"
+    },
+    {
+      "name": "Nidorino",
+      "icon": "nidorino"
+    },
+    {
+      "name": "Nidoking",
+      "icon": "nidoking"
+    },
+    {
+      "name": "Seadra",
+      "icon": "seadra"
+    }
+  ],
+  "ABILITY_INNER_FOCUS": [
+    {
+      "name": "Zubat",
+      "icon": "zubat"
+    },
+    {
+      "name": "Golbat",
+      "icon": "golbat"
+    },
+    {
+      "name": "Crobat",
+      "icon": "crobat"
+    },
+    {
+      "name": "Abra",
+      "icon": "abra"
+    },
+    {
+      "name": "Kadabra",
+      "icon": "kadabra"
+    },
+    {
+      "name": "Alakazam",
+      "icon": "alakazam"
+    },
+    {
+      "name": "Farfetchd",
+      "icon": "farfetchd"
+    },
+    {
+      "name": "Drowzee",
+      "icon": "drowzee"
+    },
+    {
+      "name": "Hypno",
+      "icon": "hypno"
+    },
+    {
+      "name": "Hitmonchan",
+      "icon": "hitmonchan"
+    },
+    {
+      "name": "Kangaskhan",
+      "icon": "kangaskhan"
+    },
+    {
+      "name": "Umbreon",
+      "icon": "umbreon"
+    },
+    {
+      "name": "Dragonite",
+      "icon": "dragonite"
+    }
+  ],
+  "ABILITY_MAGMA_ARMOR": [
+    {
+      "name": "Slugma",
+      "icon": "slugma",
+      "fallback": true
+    },
+    {
+      "name": "Magcargo",
+      "icon": "magcargo",
+      "fallback": true
+    },
+    {
+      "name": "Camerupt",
+      "icon": "camerupt",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WATER_VEIL": [
+    {
+      "name": "Goldeen",
+      "icon": "goldeen"
+    },
+    {
+      "name": "Seaking",
+      "icon": "seaking"
+    }
+  ],
+  "ABILITY_MAGNET_PULL": [
+    {
+      "name": "Magnemite",
+      "icon": "magnemite"
+    },
+    {
+      "name": "Magneton",
+      "icon": "magneton"
+    }
+  ],
+  "ABILITY_SOUNDPROOF": [
+    {
+      "name": "Voltorb",
+      "icon": "voltorb"
+    },
+    {
+      "name": "Electrode",
+      "icon": "electrode"
+    },
+    {
+      "name": "MrMime",
+      "icon": "mr_mime"
+    }
+  ],
+  "ABILITY_RAIN_DISH": [
+    {
+      "name": "Squirtle",
+      "icon": "squirtle"
+    },
+    {
+      "name": "Wartortle",
+      "icon": "wartortle"
+    },
+    {
+      "name": "Blastoise",
+      "icon": "blastoise"
+    },
+    {
+      "name": "Tentacool",
+      "icon": "tentacool"
+    },
+    {
+      "name": "Tentacruel",
+      "icon": "tentacruel"
+    }
+  ],
+  "ABILITY_SAND_STREAM": [
+    {
+      "name": "Tyranitar",
+      "icon": "tyranitar",
+      "fallback": true
+    },
+    {
+      "name": "Hippopotas",
+      "icon": "hippopotas",
+      "fallback": true
+    },
+    {
+      "name": "Hippowdon",
+      "icon": "hippowdon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_THICK_FAT": [
+    {
+      "name": "Seel",
+      "icon": "seel"
+    },
+    {
+      "name": "Dewgong",
+      "icon": "dewgong"
+    },
+    {
+      "name": "Snorlax",
+      "icon": "snorlax"
+    }
+  ],
+  "ABILITY_EARLY_BIRD": [
+    {
+      "name": "Doduo",
+      "icon": "doduo"
+    },
+    {
+      "name": "Dodrio",
+      "icon": "dodrio"
+    },
+    {
+      "name": "Kangaskhan",
+      "icon": "kangaskhan"
+    }
+  ],
+  "ABILITY_FLAME_BODY": [
+    {
+      "name": "Ponyta",
+      "icon": "ponyta"
+    },
+    {
+      "name": "Rapidash",
+      "icon": "rapidash"
+    },
+    {
+      "name": "Magmar",
+      "icon": "magmar"
+    },
+    {
+      "name": "Moltres",
+      "icon": "moltres"
+    },
+    {
+      "name": "Magby",
+      "icon": "magby"
+    }
+  ],
+  "ABILITY_RUN_AWAY": [
+    {
+      "name": "Caterpie",
+      "icon": "caterpie"
+    },
+    {
+      "name": "Weedle",
+      "icon": "weedle"
+    },
+    {
+      "name": "Rattata",
+      "icon": "rattata"
+    },
+    {
+      "name": "Raticate",
+      "icon": "raticate"
+    },
+    {
+      "name": "Oddish",
+      "icon": "oddish"
+    },
+    {
+      "name": "Venonat",
+      "icon": "venonat"
+    },
+    {
+      "name": "Ponyta",
+      "icon": "ponyta"
+    },
+    {
+      "name": "Rapidash",
+      "icon": "rapidash"
+    },
+    {
+      "name": "Doduo",
+      "icon": "doduo"
+    },
+    {
+      "name": "Dodrio",
+      "icon": "dodrio"
+    }
+  ],
+  "ABILITY_KEEN_EYE": [
+    {
+      "name": "Pidgey",
+      "icon": "pidgey"
+    },
+    {
+      "name": "Pidgeotto",
+      "icon": "pidgeotto"
+    },
+    {
+      "name": "Pidgeot",
+      "icon": "pidgeot"
+    },
+    {
+      "name": "Spearow",
+      "icon": "spearow"
+    },
+    {
+      "name": "Fearow",
+      "icon": "fearow"
+    },
+    {
+      "name": "Farfetchd",
+      "icon": "farfetchd"
+    },
+    {
+      "name": "Hitmonchan",
+      "icon": "hitmonchan"
+    }
+  ],
+  "ABILITY_HYPER_CUTTER": [
+    {
+      "name": "Krabby",
+      "icon": "krabby"
+    },
+    {
+      "name": "Kingler",
+      "icon": "kingler"
+    },
+    {
+      "name": "Pinsir",
+      "icon": "pinsir"
+    }
+  ],
+  "ABILITY_PICKUP": [
+    {
+      "name": "Meowth",
+      "icon": "meowth_alola",
+      "fallback": true
+    },
+    {
+      "name": "Munchlax",
+      "icon": "munchlax",
+      "fallback": true
+    },
+    {
+      "name": "Aipom",
+      "icon": "aipom",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TRUANT": [
+    {
+      "name": "Slakoth",
+      "icon": "slakoth",
+      "fallback": true
+    },
+    {
+      "name": "Slaking",
+      "icon": "slaking",
+      "fallback": true
+    },
+    {
+      "name": "Durant",
+      "icon": "durant",
+      "fallback": true
+    }
+  ],
+  "ABILITY_HUSTLE": [
+    {
+      "name": "Rattata",
+      "icon": "rattata"
+    },
+    {
+      "name": "Raticate",
+      "icon": "raticate"
+    },
+    {
+      "name": "NidoranF",
+      "icon": "nidoran_f"
+    },
+    {
+      "name": "Nidorina",
+      "icon": "nidorina"
+    },
+    {
+      "name": "NidoranM",
+      "icon": "nidoran_m"
+    },
+    {
+      "name": "Nidorino",
+      "icon": "nidorino"
+    },
+    {
+      "name": "Togepi",
+      "icon": "togepi"
+    },
+    {
+      "name": "Togetic",
+      "icon": "togetic"
+    }
+  ],
+  "ABILITY_CUTE_CHARM": [
+    {
+      "name": "Cleffa",
+      "icon": "cleffa"
+    },
+    {
+      "name": "Clefairy",
+      "icon": "clefairy"
+    },
+    {
+      "name": "Clefable",
+      "icon": "clefable"
+    },
+    {
+      "name": "Igglybuff",
+      "icon": "igglybuff"
+    },
+    {
+      "name": "Jigglypuff",
+      "icon": "jigglypuff"
+    },
+    {
+      "name": "Wigglytuff",
+      "icon": "wigglytuff"
+    }
+  ],
+  "ABILITY_PLUS": [
+    {
+      "name": "Mareep",
+      "icon": "mareep",
+      "fallback": true
+    },
+    {
+      "name": "Flaaffy",
+      "icon": "flaaffy",
+      "fallback": true
+    },
+    {
+      "name": "Ampharos",
+      "icon": "ampharos",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MINUS": [
+    {
+      "name": "Electrike",
+      "icon": "electrike",
+      "fallback": true
+    },
+    {
+      "name": "Manectric",
+      "icon": "manectric",
+      "fallback": true
+    },
+    {
+      "name": "Minun",
+      "icon": "minun",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STICKY_HOLD": [
+    {
+      "name": "Grimer",
+      "icon": "grimer"
+    },
+    {
+      "name": "Muk",
+      "icon": "muk"
+    }
+  ],
+  "ABILITY_SHED_SKIN": [
+    {
+      "name": "Metapod",
+      "icon": "metapod"
+    },
+    {
+      "name": "Kakuna",
+      "icon": "kakuna"
+    },
+    {
+      "name": "Ekans",
+      "icon": "ekans"
+    },
+    {
+      "name": "Arbok",
+      "icon": "arbok"
+    },
+    {
+      "name": "Dratini",
+      "icon": "dratini"
+    },
+    {
+      "name": "Dragonair",
+      "icon": "dragonair"
+    }
+  ],
+  "ABILITY_GUTS": [
+    {
+      "name": "Rattata",
+      "icon": "rattata"
+    },
+    {
+      "name": "Raticate",
+      "icon": "raticate"
+    },
+    {
+      "name": "Machop",
+      "icon": "machop"
+    },
+    {
+      "name": "Machoke",
+      "icon": "machoke"
+    },
+    {
+      "name": "Machamp",
+      "icon": "machamp"
+    },
+    {
+      "name": "Flareon",
+      "icon": "flareon"
+    }
+  ],
+  "ABILITY_MARVEL_SCALE": [
+    {
+      "name": "Dratini",
+      "icon": "dratini"
+    },
+    {
+      "name": "Dragonair",
+      "icon": "dragonair"
+    }
+  ],
+  "ABILITY_LIQUID_OOZE": [
+    {
+      "name": "Tentacool",
+      "icon": "tentacool"
+    },
+    {
+      "name": "Tentacruel",
+      "icon": "tentacruel"
+    }
+  ],
+  "ABILITY_OVERGROW": [
+    {
+      "name": "Bulbasaur",
+      "icon": "bulbasaur"
+    },
+    {
+      "name": "Ivysaur",
+      "icon": "ivysaur"
+    },
+    {
+      "name": "Venusaur",
+      "icon": "venusaur"
+    }
+  ],
+  "ABILITY_BLAZE": [
+    {
+      "name": "Charmander",
+      "icon": "charmander"
+    },
+    {
+      "name": "Charmeleon",
+      "icon": "charmeleon"
+    },
+    {
+      "name": "Charizard",
+      "icon": "charizard"
+    }
+  ],
+  "ABILITY_TORRENT": [
+    {
+      "name": "Squirtle",
+      "icon": "squirtle"
+    },
+    {
+      "name": "Wartortle",
+      "icon": "wartortle"
+    },
+    {
+      "name": "Blastoise",
+      "icon": "blastoise"
+    }
+  ],
+  "ABILITY_SWARM": [
+    {
+      "name": "Beedrill",
+      "icon": "beedrill"
+    },
+    {
+      "name": "Scyther",
+      "icon": "scyther"
+    },
+    {
+      "name": "Scizor",
+      "icon": "scizor"
+    }
+  ],
+  "ABILITY_ROCK_HEAD": [
+    {
+      "name": "Geodude",
+      "icon": "geodude"
+    },
+    {
+      "name": "Graveler",
+      "icon": "graveler"
+    },
+    {
+      "name": "Golem",
+      "icon": "golem"
+    },
+    {
+      "name": "Onix",
+      "icon": "onix"
+    },
+    {
+      "name": "Steelix",
+      "icon": "steelix"
+    },
+    {
+      "name": "Cubone",
+      "icon": "cubone"
+    },
+    {
+      "name": "Marowak",
+      "icon": "marowak"
+    },
+    {
+      "name": "Rhyhorn",
+      "icon": "rhyhorn"
+    },
+    {
+      "name": "Rhydon",
+      "icon": "rhydon"
+    },
+    {
+      "name": "Aerodactyl",
+      "icon": "aerodactyl"
+    }
+  ],
+  "ABILITY_DROUGHT": [
+    {
+      "name": "Vulpix",
+      "icon": "vulpix"
+    },
+    {
+      "name": "Ninetales",
+      "icon": "ninetales"
+    }
+  ],
+  "ABILITY_ARENA_TRAP": [
+    {
+      "name": "Diglett",
+      "icon": "diglett"
+    },
+    {
+      "name": "Dugtrio",
+      "icon": "dugtrio"
+    }
+  ],
+  "ABILITY_VITAL_SPIRIT": [
+    {
+      "name": "Mankey",
+      "icon": "mankey"
+    },
+    {
+      "name": "Primeape",
+      "icon": "primeape"
+    },
+    {
+      "name": "Electabuzz",
+      "icon": "electabuzz"
+    },
+    {
+      "name": "Magmar",
+      "icon": "magmar"
+    },
+    {
+      "name": "Elekid",
+      "icon": "elekid"
+    },
+    {
+      "name": "Magby",
+      "icon": "magby"
+    }
+  ],
+  "ABILITY_WHITE_SMOKE": [
+    {
+      "name": "Torkoal",
+      "icon": "torkoal",
+      "fallback": true
+    },
+    {
+      "name": "Heatmor",
+      "icon": "heatmor",
+      "fallback": true
+    },
+    {
+      "name": "Sizzlipede",
+      "icon": "sizzlipede",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PURE_POWER": [
+    {
+      "name": "Meditite",
+      "icon": "meditite",
+      "fallback": true
+    },
+    {
+      "name": "Medicham",
+      "icon": "medicham",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SHELL_ARMOR": [
+    {
+      "name": "Shellder",
+      "icon": "shellder"
+    },
+    {
+      "name": "Cloyster",
+      "icon": "cloyster"
+    },
+    {
+      "name": "Krabby",
+      "icon": "krabby"
+    },
+    {
+      "name": "Kingler",
+      "icon": "kingler"
+    },
+    {
+      "name": "Lapras",
+      "icon": "lapras"
+    },
+    {
+      "name": "Omanyte",
+      "icon": "omanyte"
+    },
+    {
+      "name": "Omastar",
+      "icon": "omastar"
+    }
+  ],
+  "ABILITY_AIR_LOCK": [
+    {
+      "name": "Rayquaza",
+      "icon": "rayquaza",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TANGLED_FEET": [
+    {
+      "name": "Pidgey",
+      "icon": "pidgey"
+    },
+    {
+      "name": "Pidgeotto",
+      "icon": "pidgeotto"
+    },
+    {
+      "name": "Pidgeot",
+      "icon": "pidgeot"
+    },
+    {
+      "name": "Doduo",
+      "icon": "doduo"
+    },
+    {
+      "name": "Dodrio",
+      "icon": "dodrio"
+    }
+  ],
+  "ABILITY_MOTOR_DRIVE": [
+    {
+      "name": "Electivire",
+      "icon": "electivire",
+      "fallback": true
+    },
+    {
+      "name": "Blitzle",
+      "icon": "blitzle",
+      "fallback": true
+    },
+    {
+      "name": "Zebstrika",
+      "icon": "zebstrika",
+      "fallback": true
+    }
+  ],
+  "ABILITY_RIVALRY": [
+    {
+      "name": "NidoranF",
+      "icon": "nidoran_f"
+    },
+    {
+      "name": "Nidorina",
+      "icon": "nidorina"
+    },
+    {
+      "name": "Nidoqueen",
+      "icon": "nidoqueen"
+    },
+    {
+      "name": "NidoranM",
+      "icon": "nidoran_m"
+    },
+    {
+      "name": "Nidorino",
+      "icon": "nidorino"
+    },
+    {
+      "name": "Nidoking",
+      "icon": "nidoking"
+    }
+  ],
+  "ABILITY_STEADFAST": [
+    {
+      "name": "Machop",
+      "icon": "machop"
+    },
+    {
+      "name": "Machoke",
+      "icon": "machoke"
+    },
+    {
+      "name": "Machamp",
+      "icon": "machamp"
+    },
+    {
+      "name": "Hitmontop",
+      "icon": "hitmontop"
+    },
+    {
+      "name": "Scyther",
+      "icon": "scyther"
+    }
+  ],
+  "ABILITY_SNOW_CLOAK": [
+    {
+      "name": "Articuno",
+      "icon": "articuno"
+    }
+  ],
+  "ABILITY_GLUTTONY": [
+    {
+      "name": "Bellsprout",
+      "icon": "bellsprout"
+    },
+    {
+      "name": "Weepinbell",
+      "icon": "weepinbell"
+    },
+    {
+      "name": "Victreebel",
+      "icon": "victreebel"
+    },
+    {
+      "name": "Snorlax",
+      "icon": "snorlax"
+    }
+  ],
+  "ABILITY_ANGER_POINT": [
+    {
+      "name": "Mankey",
+      "icon": "mankey"
+    },
+    {
+      "name": "Primeape",
+      "icon": "primeape"
+    },
+    {
+      "name": "Tauros",
+      "icon": "tauros"
+    }
+  ],
+  "ABILITY_UNBURDEN": [
+    {
+      "name": "Hitmonlee",
+      "icon": "hitmonlee"
+    }
+  ],
+  "ABILITY_HEATPROOF": [
+    {
+      "name": "Bronzor",
+      "icon": "bronzor",
+      "fallback": true
+    },
+    {
+      "name": "Bronzong",
+      "icon": "bronzong",
+      "fallback": true
+    },
+    {
+      "name": "Rolycoly",
+      "icon": "rolycoly",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SIMPLE": [
+    {
+      "name": "Numel",
+      "icon": "numel",
+      "fallback": true
+    },
+    {
+      "name": "Bidoof",
+      "icon": "bidoof",
+      "fallback": true
+    },
+    {
+      "name": "Bibarel",
+      "icon": "bibarel",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DRY_SKIN": [
+    {
+      "name": "Paras",
+      "icon": "paras"
+    },
+    {
+      "name": "Parasect",
+      "icon": "parasect"
+    },
+    {
+      "name": "Jynx",
+      "icon": "jynx"
+    }
+  ],
+  "ABILITY_DOWNLOAD": [
+    {
+      "name": "Porygon",
+      "icon": "porygon"
+    }
+  ],
+  "ABILITY_IRON_FIST": [
+    {
+      "name": "Hitmonchan",
+      "icon": "hitmonchan"
+    }
+  ],
+  "ABILITY_POISON_HEAL": [
+    {
+      "name": "Gliscor",
+      "icon": "gliscor",
+      "fallback": true
+    },
+    {
+      "name": "Shroomish",
+      "icon": "shroomish",
+      "fallback": true
+    },
+    {
+      "name": "Breloom",
+      "icon": "breloom",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ADAPTABILITY": [
+    {
+      "name": "Beedrill",
+      "icon": "beedrill_mega",
+      "fallback": true
+    },
+    {
+      "name": "Eevee",
+      "icon": "eevee_partner",
+      "fallback": true
+    },
+    {
+      "name": "Porygon-Z",
+      "icon": "porygon_z",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SKILL_LINK": [
+    {
+      "name": "Shellder",
+      "icon": "shellder"
+    },
+    {
+      "name": "Cloyster",
+      "icon": "cloyster"
+    }
+  ],
+  "ABILITY_HYDRATION": [
+    {
+      "name": "Seel",
+      "icon": "seel"
+    },
+    {
+      "name": "Dewgong",
+      "icon": "dewgong"
+    },
+    {
+      "name": "Lapras",
+      "icon": "lapras"
+    },
+    {
+      "name": "Vaporeon",
+      "icon": "vaporeon"
+    },
+    {
+      "name": "Smoochum",
+      "icon": "smoochum"
+    }
+  ],
+  "ABILITY_SOLAR_POWER": [
+    {
+      "name": "Charmander",
+      "icon": "charmander"
+    },
+    {
+      "name": "Charmeleon",
+      "icon": "charmeleon"
+    },
+    {
+      "name": "Charizard",
+      "icon": "charizard"
+    }
+  ],
+  "ABILITY_QUICK_FEET": [
+    {
+      "name": "Jolteon",
+      "icon": "jolteon"
+    }
+  ],
+  "ABILITY_NORMALIZE": [
+    {
+      "name": "Skitty",
+      "icon": "skitty",
+      "fallback": true
+    },
+    {
+      "name": "Delcatty",
+      "icon": "delcatty",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SNIPER": [
+    {
+      "name": "Beedrill",
+      "icon": "beedrill"
+    },
+    {
+      "name": "Spearow",
+      "icon": "spearow"
+    },
+    {
+      "name": "Fearow",
+      "icon": "fearow"
+    },
+    {
+      "name": "Horsea",
+      "icon": "horsea"
+    },
+    {
+      "name": "Seadra",
+      "icon": "seadra"
+    },
+    {
+      "name": "Kingdra",
+      "icon": "kingdra"
+    }
+  ],
+  "ABILITY_MAGIC_GUARD": [
+    {
+      "name": "Cleffa",
+      "icon": "cleffa"
+    },
+    {
+      "name": "Clefairy",
+      "icon": "clefairy"
+    },
+    {
+      "name": "Clefable",
+      "icon": "clefable"
+    },
+    {
+      "name": "Abra",
+      "icon": "abra"
+    },
+    {
+      "name": "Kadabra",
+      "icon": "kadabra"
+    },
+    {
+      "name": "Alakazam",
+      "icon": "alakazam"
+    }
+  ],
+  "ABILITY_NO_GUARD": [
+    {
+      "name": "Machop",
+      "icon": "machop"
+    },
+    {
+      "name": "Machoke",
+      "icon": "machoke"
+    },
+    {
+      "name": "Machamp",
+      "icon": "machamp"
+    }
+  ],
+  "ABILITY_STALL": [
+    {
+      "name": "Sableye",
+      "icon": "sableye",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TECHNICIAN": [
+    {
+      "name": "Persian",
+      "icon": "persian"
+    },
+    {
+      "name": "Hitmontop",
+      "icon": "hitmontop"
+    },
+    {
+      "name": "MrMime",
+      "icon": "mr_mime"
+    },
+    {
+      "name": "Scyther",
+      "icon": "scyther"
+    },
+    {
+      "name": "Scizor",
+      "icon": "scizor"
+    }
+  ],
+  "ABILITY_LEAF_GUARD": [
+    {
+      "name": "Tangela",
+      "icon": "tangela"
+    }
+  ],
+  "ABILITY_KLUTZ": [
+    {
+      "name": "Buneary",
+      "icon": "buneary",
+      "fallback": true
+    },
+    {
+      "name": "Lopunny",
+      "icon": "lopunny",
+      "fallback": true
+    },
+    {
+      "name": "Woobat",
+      "icon": "woobat",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MOLD_BREAKER": [
+    {
+      "name": "Pinsir",
+      "icon": "pinsir"
+    }
+  ],
+  "ABILITY_SUPER_LUCK": [
+    {
+      "name": "Togepi",
+      "icon": "togepi"
+    },
+    {
+      "name": "Togetic",
+      "icon": "togetic"
+    }
+  ],
+  "ABILITY_AFTERMATH": [
+    {
+      "name": "Voltorb",
+      "icon": "voltorb"
+    },
+    {
+      "name": "Electrode",
+      "icon": "electrode"
+    }
+  ],
+  "ABILITY_UNAWARE": [
+    {
+      "name": "Clefable",
+      "icon": "clefable"
+    }
+  ],
+  "ABILITY_TINTED_LENS": [
+    {
+      "name": "Butterfree",
+      "icon": "butterfree"
+    },
+    {
+      "name": "Venonat",
+      "icon": "venonat"
+    },
+    {
+      "name": "Venomoth",
+      "icon": "venomoth"
+    }
+  ],
+  "ABILITY_FILTER": [
+    {
+      "name": "MrMime",
+      "icon": "mr_mime"
+    }
+  ],
+  "ABILITY_SCRAPPY": [
+    {
+      "name": "Kangaskhan",
+      "icon": "kangaskhan"
+    }
+  ],
+  "ABILITY_STORM_DRAIN": [
+    {
+      "name": "Lileep",
+      "icon": "lileep",
+      "fallback": true
+    },
+    {
+      "name": "Cradily",
+      "icon": "cradily",
+      "fallback": true
+    },
+    {
+      "name": "Shellos",
+      "icon": "shellos",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ICE_BODY": [
+    {
+      "name": "Seel",
+      "icon": "seel"
+    },
+    {
+      "name": "Dewgong",
+      "icon": "dewgong"
+    }
+  ],
+  "ABILITY_SOLID_ROCK": [
+    {
+      "name": "Rhyperior",
+      "icon": "rhyperior",
+      "fallback": true
+    },
+    {
+      "name": "Camerupt",
+      "icon": "camerupt",
+      "fallback": true
+    },
+    {
+      "name": "Tirtouga",
+      "icon": "tirtouga",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SNOW_WARNING": [
+    {
+      "name": "Vulpix",
+      "icon": "vulpix_alola",
+      "fallback": true
+    },
+    {
+      "name": "Ninetales",
+      "icon": "ninetales_alola",
+      "fallback": true
+    },
+    {
+      "name": "Froslass",
+      "icon": "froslass_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FRISK": [
+    {
+      "name": "Wigglytuff",
+      "icon": "wigglytuff"
+    }
+  ],
+  "ABILITY_RECKLESS": [
+    {
+      "name": "Hitmonlee",
+      "icon": "hitmonlee"
+    },
+    {
+      "name": "Rhyhorn",
+      "icon": "rhyhorn"
+    },
+    {
+      "name": "Rhydon",
+      "icon": "rhydon"
+    }
+  ],
+  "ABILITY_FLOWER_GIFT": [
+    {
+      "name": "Cherrim",
+      "icon": "cherrim",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BAD_DREAMS": [
+    {
+      "name": "Darkrai",
+      "icon": "darkrai",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PICKPOCKET": [
+    {
+      "name": "Sneasel",
+      "icon": "sneasel",
+      "fallback": true
+    },
+    {
+      "name": "Weavile",
+      "icon": "weavile",
+      "fallback": true
+    },
+    {
+      "name": "Seedot",
+      "icon": "seedot",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SHEER_FORCE": [
+    {
+      "name": "Nidoqueen",
+      "icon": "nidoqueen"
+    },
+    {
+      "name": "Nidoking",
+      "icon": "nidoking"
+    },
+    {
+      "name": "Steelix",
+      "icon": "steelix"
+    },
+    {
+      "name": "Krabby",
+      "icon": "krabby"
+    },
+    {
+      "name": "Kingler",
+      "icon": "kingler"
+    },
+    {
+      "name": "Tauros",
+      "icon": "tauros"
+    }
+  ],
+  "ABILITY_CONTRARY": [
+    {
+      "name": "Shuckle",
+      "icon": "shuckle",
+      "fallback": true
+    },
+    {
+      "name": "Spinda",
+      "icon": "spinda",
+      "fallback": true
+    },
+    {
+      "name": "Staraptor",
+      "icon": "staraptor_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_UNNERVE": [
+    {
+      "name": "Ekans",
+      "icon": "ekans"
+    },
+    {
+      "name": "Arbok",
+      "icon": "arbok"
+    },
+    {
+      "name": "Persian",
+      "icon": "persian"
+    },
+    {
+      "name": "Aerodactyl",
+      "icon": "aerodactyl"
+    },
+    {
+      "name": "Mewtwo",
+      "icon": "mewtwo"
+    }
+  ],
+  "ABILITY_DEFIANT": [
+    {
+      "name": "Mankey",
+      "icon": "mankey"
+    },
+    {
+      "name": "Primeape",
+      "icon": "primeape"
+    },
+    {
+      "name": "Farfetchd",
+      "icon": "farfetchd"
+    }
+  ],
+  "ABILITY_DEFEATIST": [
+    {
+      "name": "Archen",
+      "icon": "archen",
+      "fallback": true
+    },
+    {
+      "name": "Archeops",
+      "icon": "archeops",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CURSED_BODY": [
+    {
+      "name": "Marowak",
+      "icon": "marowak_alola",
+      "fallback": true
+    },
+    {
+      "name": "Corsola",
+      "icon": "corsola_galar",
+      "fallback": true
+    },
+    {
+      "name": "Shuppet",
+      "icon": "shuppet",
+      "fallback": true
+    }
+  ],
+  "ABILITY_HEALER": [
+    {
+      "name": "Bellossom",
+      "icon": "bellossom"
+    },
+    {
+      "name": "Chansey",
+      "icon": "chansey"
+    },
+    {
+      "name": "Blissey",
+      "icon": "blissey"
+    }
+  ],
+  "ABILITY_FRIEND_GUARD": [
+    {
+      "name": "Cleffa",
+      "icon": "cleffa"
+    },
+    {
+      "name": "Clefairy",
+      "icon": "clefairy"
+    },
+    {
+      "name": "Igglybuff",
+      "icon": "igglybuff"
+    },
+    {
+      "name": "Jigglypuff",
+      "icon": "jigglypuff"
+    }
+  ],
+  "ABILITY_WEAK_ARMOR": [
+    {
+      "name": "Onix",
+      "icon": "onix"
+    },
+    {
+      "name": "Omanyte",
+      "icon": "omanyte"
+    },
+    {
+      "name": "Omastar",
+      "icon": "omastar"
+    },
+    {
+      "name": "Kabuto",
+      "icon": "kabuto"
+    },
+    {
+      "name": "Kabutops",
+      "icon": "kabutops"
+    }
+  ],
+  "ABILITY_HEAVY_METAL": [
+    {
+      "name": "Aron",
+      "icon": "aron",
+      "fallback": true
+    },
+    {
+      "name": "Lairon",
+      "icon": "lairon",
+      "fallback": true
+    },
+    {
+      "name": "Aggron",
+      "icon": "aggron",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LIGHT_METAL": [
+    {
+      "name": "Scizor",
+      "icon": "scizor"
+    }
+  ],
+  "ABILITY_MULTISCALE": [
+    {
+      "name": "Dragonite",
+      "icon": "dragonite"
+    }
+  ],
+  "ABILITY_TOXIC_BOOST": [
+    {
+      "name": "Zangoose",
+      "icon": "zangoose",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FLARE_BOOST": [
+    {
+      "name": "Drifloon",
+      "icon": "drifloon",
+      "fallback": true
+    },
+    {
+      "name": "Drifblim",
+      "icon": "drifblim",
+      "fallback": true
+    }
+  ],
+  "ABILITY_HARVEST": [
+    {
+      "name": "Exeggcute",
+      "icon": "exeggcute"
+    },
+    {
+      "name": "Exeggutor",
+      "icon": "exeggutor"
+    }
+  ],
+  "ABILITY_TELEPATHY": [
+    {
+      "name": "Wynaut",
+      "icon": "wynaut",
+      "fallback": true
+    },
+    {
+      "name": "Wobbuffet",
+      "icon": "wobbuffet",
+      "fallback": true
+    },
+    {
+      "name": "Ralts",
+      "icon": "ralts",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MOODY": [
+    {
+      "name": "Remoraid",
+      "icon": "remoraid",
+      "fallback": true
+    },
+    {
+      "name": "Octillery",
+      "icon": "octillery",
+      "fallback": true
+    },
+    {
+      "name": "Smeargle",
+      "icon": "smeargle",
+      "fallback": true
+    }
+  ],
+  "ABILITY_OVERCOAT": [
+    {
+      "name": "Shellder",
+      "icon": "shellder"
+    },
+    {
+      "name": "Cloyster",
+      "icon": "cloyster"
+    }
+  ],
+  "ABILITY_POISON_TOUCH": [
+    {
+      "name": "Grimer",
+      "icon": "grimer"
+    },
+    {
+      "name": "Muk",
+      "icon": "muk"
+    }
+  ],
+  "ABILITY_REGENERATOR": [
+    {
+      "name": "Slowpoke",
+      "icon": "slowpoke"
+    },
+    {
+      "name": "Slowbro",
+      "icon": "slowbro"
+    },
+    {
+      "name": "Slowking",
+      "icon": "slowking"
+    },
+    {
+      "name": "Tangela",
+      "icon": "tangela"
+    }
+  ],
+  "ABILITY_BIG_PECKS": [
+    {
+      "name": "Pidgey",
+      "icon": "pidgey"
+    },
+    {
+      "name": "Pidgeotto",
+      "icon": "pidgeotto"
+    },
+    {
+      "name": "Pidgeot",
+      "icon": "pidgeot"
+    }
+  ],
+  "ABILITY_SAND_RUSH": [
+    {
+      "name": "Sandshrew",
+      "icon": "sandshrew"
+    },
+    {
+      "name": "Sandslash",
+      "icon": "sandslash"
+    }
+  ],
+  "ABILITY_WONDER_SKIN": [
+    {
+      "name": "Venomoth",
+      "icon": "venomoth"
+    }
+  ],
+  "ABILITY_ANALYTIC": [
+    {
+      "name": "Magnemite",
+      "icon": "magnemite"
+    },
+    {
+      "name": "Magneton",
+      "icon": "magneton"
+    },
+    {
+      "name": "Staryu",
+      "icon": "staryu"
+    },
+    {
+      "name": "Starmie",
+      "icon": "starmie"
+    },
+    {
+      "name": "Porygon",
+      "icon": "porygon"
+    }
+  ],
+  "ABILITY_ILLUSION": [
+    {
+      "name": "Zorua",
+      "icon": "zorua",
+      "fallback": true
+    },
+    {
+      "name": "Zoroark",
+      "icon": "zoroark",
+      "fallback": true
+    }
+  ],
+  "ABILITY_IMPOSTER": [
+    {
+      "name": "Ditto",
+      "icon": "ditto"
+    }
+  ],
+  "ABILITY_INFILTRATOR": [
+    {
+      "name": "Zubat",
+      "icon": "zubat"
+    },
+    {
+      "name": "Golbat",
+      "icon": "golbat"
+    },
+    {
+      "name": "Crobat",
+      "icon": "crobat"
+    }
+  ],
+  "ABILITY_MUMMY": [
+    {
+      "name": "Yamask",
+      "icon": "yamask",
+      "fallback": true
+    },
+    {
+      "name": "Cofagrigus",
+      "icon": "cofagrigus",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MOXIE": [
+    {
+      "name": "Pinsir",
+      "icon": "pinsir"
+    },
+    {
+      "name": "Gyarados",
+      "icon": "gyarados"
+    }
+  ],
+  "ABILITY_JUSTIFIED": [
+    {
+      "name": "Growlithe",
+      "icon": "growlithe"
+    },
+    {
+      "name": "Arcanine",
+      "icon": "arcanine"
+    }
+  ],
+  "ABILITY_RATTLED": [
+    {
+      "name": "Magikarp",
+      "icon": "magikarp"
+    }
+  ],
+  "ABILITY_MAGIC_BOUNCE": [
+    {
+      "name": "Espeon",
+      "icon": "espeon"
+    }
+  ],
+  "ABILITY_SAP_SIPPER": [
+    {
+      "name": "Azurill",
+      "icon": "azurill",
+      "fallback": true
+    },
+    {
+      "name": "Marill",
+      "icon": "marill",
+      "fallback": true
+    },
+    {
+      "name": "Azumarill",
+      "icon": "azumarill",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PRANKSTER": [
+    {
+      "name": "Murkrow",
+      "icon": "murkrow",
+      "fallback": true
+    },
+    {
+      "name": "Sableye",
+      "icon": "sableye",
+      "fallback": true
+    },
+    {
+      "name": "Volbeat",
+      "icon": "volbeat",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SAND_FORCE": [
+    {
+      "name": "Diglett",
+      "icon": "diglett"
+    },
+    {
+      "name": "Dugtrio",
+      "icon": "dugtrio"
+    }
+  ],
+  "ABILITY_IRON_BARBS": [
+    {
+      "name": "Ferroseed",
+      "icon": "ferroseed",
+      "fallback": true
+    },
+    {
+      "name": "Ferrothorn",
+      "icon": "ferrothorn",
+      "fallback": true
+    },
+    {
+      "name": "Togedemaru",
+      "icon": "togedemaru",
+      "fallback": true
+    }
+  ],
+  "ABILITY_VICTORY_STAR": [
+    {
+      "name": "Victini",
+      "icon": "victini",
+      "fallback": true
+    }
+  ],
+  "ABILITY_AROMA_VEIL": [
+    {
+      "name": "Spritzee",
+      "icon": "spritzee",
+      "fallback": true
+    },
+    {
+      "name": "Aromatisse",
+      "icon": "aromatisse",
+      "fallback": true
+    },
+    {
+      "name": "Milcery",
+      "icon": "milcery",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FLOWER_VEIL": [
+    {
+      "name": "Comfey",
+      "icon": "comfey",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CHEEK_POUCH": [
+    {
+      "name": "Bunnelby",
+      "icon": "bunnelby",
+      "fallback": true
+    },
+    {
+      "name": "Diggersby",
+      "icon": "diggersby",
+      "fallback": true
+    },
+    {
+      "name": "Dedenne",
+      "icon": "dedenne",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PROTEAN": [
+    {
+      "name": "Kecleon",
+      "icon": "kecleon",
+      "fallback": true
+    },
+    {
+      "name": "Froakie",
+      "icon": "froakie",
+      "fallback": true
+    },
+    {
+      "name": "Frogadier",
+      "icon": "frogadier",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FUR_COAT": [
+    {
+      "name": "Persian",
+      "icon": "persian_alola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MAGICIAN": [
+    {
+      "name": "Fennekin",
+      "icon": "fennekin",
+      "fallback": true
+    },
+    {
+      "name": "Braixen",
+      "icon": "braixen",
+      "fallback": true
+    },
+    {
+      "name": "Delphox",
+      "icon": "delphox",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BULLETPROOF": [
+    {
+      "name": "Ursaluna",
+      "icon": "ursaluna",
+      "fallback": true
+    },
+    {
+      "name": "Chespin",
+      "icon": "chespin",
+      "fallback": true
+    },
+    {
+      "name": "Quilladin",
+      "icon": "quilladin",
+      "fallback": true
+    }
+  ],
+  "ABILITY_COMPETITIVE": [
+    {
+      "name": "Igglybuff",
+      "icon": "igglybuff"
+    },
+    {
+      "name": "Jigglypuff",
+      "icon": "jigglypuff"
+    },
+    {
+      "name": "Wigglytuff",
+      "icon": "wigglytuff"
+    }
+  ],
+  "ABILITY_STRONG_JAW": [
+    {
+      "name": "Sharpedo",
+      "icon": "sharpedo_mega",
+      "fallback": true
+    },
+    {
+      "name": "Tyrunt",
+      "icon": "tyrunt",
+      "fallback": true
+    },
+    {
+      "name": "Tyrantrum",
+      "icon": "tyrantrum",
+      "fallback": true
+    }
+  ],
+  "ABILITY_REFRIGERATE": [
+    {
+      "name": "Glalie",
+      "icon": "glalie_mega",
+      "fallback": true
+    },
+    {
+      "name": "Amaura",
+      "icon": "amaura",
+      "fallback": true
+    },
+    {
+      "name": "Aurorus",
+      "icon": "aurorus",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SWEET_VEIL": [
+    {
+      "name": "Swirlix",
+      "icon": "swirlix",
+      "fallback": true
+    },
+    {
+      "name": "Slurpuff",
+      "icon": "slurpuff",
+      "fallback": true
+    },
+    {
+      "name": "Cutiefly",
+      "icon": "cutiefly",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GALE_WINGS": [
+    {
+      "name": "Fletchling",
+      "icon": "fletchling",
+      "fallback": true
+    },
+    {
+      "name": "Fletchinder",
+      "icon": "fletchinder",
+      "fallback": true
+    },
+    {
+      "name": "Talonflame",
+      "icon": "talonflame",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MEGA_LAUNCHER": [
+    {
+      "name": "Blastoise",
+      "icon": "blastoise_mega",
+      "fallback": true
+    },
+    {
+      "name": "Clauncher",
+      "icon": "clauncher",
+      "fallback": true
+    },
+    {
+      "name": "Clawitzer",
+      "icon": "clawitzer",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GRASS_PELT": [
+    {
+      "name": "Skiddo",
+      "icon": "skiddo",
+      "fallback": true
+    },
+    {
+      "name": "Gogoat",
+      "icon": "gogoat",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SYMBIOSIS": [
+    {
+      "name": "Oranguru",
+      "icon": "oranguru",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TOUGH_CLAWS": [
+    {
+      "name": "Charizard",
+      "icon": "charizard_mega_x",
+      "fallback": true
+    },
+    {
+      "name": "Meowth",
+      "icon": "meowth_galar",
+      "fallback": true
+    },
+    {
+      "name": "Perrserker",
+      "icon": "perrserker",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PIXILATE": [
+    {
+      "name": "Sylveon",
+      "icon": "sylveon",
+      "fallback": true
+    },
+    {
+      "name": "Gardevoir",
+      "icon": "gardevoir_mega",
+      "fallback": true
+    },
+    {
+      "name": "Altaria",
+      "icon": "altaria_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GOOEY": [
+    {
+      "name": "Goomy",
+      "icon": "goomy",
+      "fallback": true
+    },
+    {
+      "name": "Sliggoo",
+      "icon": "sliggoo",
+      "fallback": true
+    },
+    {
+      "name": "Goodra",
+      "icon": "goodra",
+      "fallback": true
+    }
+  ],
+  "ABILITY_AERILATE": [
+    {
+      "name": "Pinsir",
+      "icon": "pinsir_mega",
+      "fallback": true
+    },
+    {
+      "name": "Salamence",
+      "icon": "salamence_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PARENTAL_BOND": [
+    {
+      "name": "Kangaskhan",
+      "icon": "kangaskhan_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STAMINA": [
+    {
+      "name": "Mudbray",
+      "icon": "mudbray",
+      "fallback": true
+    },
+    {
+      "name": "Mudsdale",
+      "icon": "mudsdale",
+      "fallback": true
+    },
+    {
+      "name": "Archaludon",
+      "icon": "archaludon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WIMP_OUT": [
+    {
+      "name": "Wimpod",
+      "icon": "wimpod",
+      "fallback": true
+    }
+  ],
+  "ABILITY_EMERGENCY_EXIT": [
+    {
+      "name": "Golisopod",
+      "icon": "golisopod",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WATER_COMPACTION": [
+    {
+      "name": "Sandygast",
+      "icon": "sandygast",
+      "fallback": true
+    },
+    {
+      "name": "Palossand",
+      "icon": "palossand",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MERCILESS": [
+    {
+      "name": "Mareanie",
+      "icon": "mareanie",
+      "fallback": true
+    },
+    {
+      "name": "Toxapex",
+      "icon": "toxapex",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STAKEOUT": [
+    {
+      "name": "Yungoos",
+      "icon": "yungoos",
+      "fallback": true
+    },
+    {
+      "name": "Gumshoos",
+      "icon": "gumshoos",
+      "fallback": true
+    },
+    {
+      "name": "Nickit",
+      "icon": "nickit",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WATER_BUBBLE": [
+    {
+      "name": "Dewpider",
+      "icon": "dewpider",
+      "fallback": true
+    },
+    {
+      "name": "Araquanid",
+      "icon": "araquanid",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STEELWORKER": [
+    {
+      "name": "Dhelmise",
+      "icon": "dhelmise",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BERSERK": [
+    {
+      "name": "Moltres",
+      "icon": "moltres_galar",
+      "fallback": true
+    },
+    {
+      "name": "Drampa",
+      "icon": "drampa",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SLUSH_RUSH": [
+    {
+      "name": "Sandshrew",
+      "icon": "sandshrew_alola",
+      "fallback": true
+    },
+    {
+      "name": "Sandslash",
+      "icon": "sandslash_alola",
+      "fallback": true
+    },
+    {
+      "name": "Cubchoo",
+      "icon": "cubchoo",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LONG_REACH": [
+    {
+      "name": "Rowlet",
+      "icon": "rowlet",
+      "fallback": true
+    },
+    {
+      "name": "Dartrix",
+      "icon": "dartrix",
+      "fallback": true
+    },
+    {
+      "name": "Decidueye",
+      "icon": "decidueye",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LIQUID_VOICE": [
+    {
+      "name": "Popplio",
+      "icon": "popplio",
+      "fallback": true
+    },
+    {
+      "name": "Brionne",
+      "icon": "brionne",
+      "fallback": true
+    },
+    {
+      "name": "Primarina",
+      "icon": "primarina",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TRIAGE": [
+    {
+      "name": "Comfey",
+      "icon": "comfey",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GALVANIZE": [
+    {
+      "name": "Geodude",
+      "icon": "geodude_alola",
+      "fallback": true
+    },
+    {
+      "name": "Graveler",
+      "icon": "graveler_alola",
+      "fallback": true
+    },
+    {
+      "name": "Golem",
+      "icon": "golem_alola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SURGE_SURFER": [
+    {
+      "name": "Raichu",
+      "icon": "raichu_alola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CORROSION": [
+    {
+      "name": "Salandit",
+      "icon": "salandit",
+      "fallback": true
+    },
+    {
+      "name": "Salazzle",
+      "icon": "salazzle",
+      "fallback": true
+    },
+    {
+      "name": "Glimmet",
+      "icon": "glimmet",
+      "fallback": true
+    }
+  ],
+  "ABILITY_COMATOSE": [
+    {
+      "name": "Komala",
+      "icon": "komala",
+      "fallback": true
+    }
+  ],
+  "ABILITY_QUEENLY_MAJESTY": [
+    {
+      "name": "Tsareena",
+      "icon": "tsareena",
+      "fallback": true
+    }
+  ],
+  "ABILITY_INNARDS_OUT": [
+    {
+      "name": "Victreebel",
+      "icon": "victreebel_mega",
+      "fallback": true
+    },
+    {
+      "name": "Pyukumuku",
+      "icon": "pyukumuku",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DANCER": [
+    {
+      "name": "Oricorio",
+      "icon": "oricorio",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BATTERY": [
+    {
+      "name": "Charjabug",
+      "icon": "charjabug",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FLUFFY": [
+    {
+      "name": "Stufful",
+      "icon": "stufful",
+      "fallback": true
+    },
+    {
+      "name": "Bewear",
+      "icon": "bewear",
+      "fallback": true
+    },
+    {
+      "name": "Wooloo",
+      "icon": "wooloo",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DAZZLING": [
+    {
+      "name": "Bruxish",
+      "icon": "bruxish",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TANGLING_HAIR": [
+    {
+      "name": "Diglett",
+      "icon": "diglett_alola",
+      "fallback": true
+    },
+    {
+      "name": "Dugtrio",
+      "icon": "dugtrio_alola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_RECEIVER": [
+    {
+      "name": "Passimian",
+      "icon": "passimian",
+      "fallback": true
+    }
+  ],
+  "ABILITY_POWER_OF_ALCHEMY": [
+    {
+      "name": "Grimer",
+      "icon": "grimer_alola",
+      "fallback": true
+    },
+    {
+      "name": "Muk",
+      "icon": "muk_alola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BEAST_BOOST": [
+    {
+      "name": "Nihilego",
+      "icon": "nihilego",
+      "fallback": true
+    },
+    {
+      "name": "Buzzwole",
+      "icon": "buzzwole",
+      "fallback": true
+    },
+    {
+      "name": "Pheromosa",
+      "icon": "pheromosa",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ELECTRIC_SURGE": [
+    {
+      "name": "Raichu",
+      "icon": "raichu_mega_x",
+      "fallback": true
+    },
+    {
+      "name": "Tapu Koko",
+      "icon": "tapu_koko",
+      "fallback": true
+    },
+    {
+      "name": "Pincurchin",
+      "icon": "pincurchin",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PSYCHIC_SURGE": [
+    {
+      "name": "Tapu Lele",
+      "icon": "tapu_lele",
+      "fallback": true
+    },
+    {
+      "name": "Indeedee",
+      "icon": "indeedee",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MISTY_SURGE": [
+    {
+      "name": "Weezing",
+      "icon": "weezing_galar",
+      "fallback": true
+    },
+    {
+      "name": "Tapu Fini",
+      "icon": "tapu_fini",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GRASSY_SURGE": [
+    {
+      "name": "Tapu Bulu",
+      "icon": "tapu_bulu",
+      "fallback": true
+    },
+    {
+      "name": "Grookey",
+      "icon": "grookey",
+      "fallback": true
+    },
+    {
+      "name": "Thwackey",
+      "icon": "thwackey",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FULL_METAL_BODY": [
+    {
+      "name": "Solgaleo",
+      "icon": "solgaleo",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SHADOW_SHIELD": [
+    {
+      "name": "Lunala",
+      "icon": "lunala",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PRISM_ARMOR": [
+    {
+      "name": "Necrozma",
+      "icon": "necrozma",
+      "fallback": true
+    }
+  ],
+  "ABILITY_NEUROFORCE": [
+    {
+      "name": "Necrozma",
+      "icon": "necrozma_ultra",
+      "fallback": true
+    }
+  ],
+  "ABILITY_INTREPID_SWORD": [
+    {
+      "name": "Zacian",
+      "icon": "zacian",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DAUNTLESS_SHIELD": [
+    {
+      "name": "Zamazenta",
+      "icon": "zamazenta",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LIBERO": [
+    {
+      "name": "Scorbunny",
+      "icon": "scorbunny",
+      "fallback": true
+    },
+    {
+      "name": "Raboot",
+      "icon": "raboot",
+      "fallback": true
+    },
+    {
+      "name": "Cinderace",
+      "icon": "cinderace",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BALL_FETCH": [
+    {
+      "name": "Yamper",
+      "icon": "yamper",
+      "fallback": true
+    }
+  ],
+  "ABILITY_COTTON_DOWN": [
+    {
+      "name": "Gossifleur",
+      "icon": "gossifleur",
+      "fallback": true
+    },
+    {
+      "name": "Eldegoss",
+      "icon": "eldegoss",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PROPELLER_TAIL": [
+    {
+      "name": "Arrokuda",
+      "icon": "arrokuda",
+      "fallback": true
+    },
+    {
+      "name": "Barraskewda",
+      "icon": "barraskewda",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MIRROR_ARMOR": [
+    {
+      "name": "Corviknight",
+      "icon": "corviknight",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STALWART": [
+    {
+      "name": "Skarmory",
+      "icon": "skarmory_mega",
+      "fallback": true
+    },
+    {
+      "name": "Duraludon",
+      "icon": "duraludon",
+      "fallback": true
+    },
+    {
+      "name": "Archaludon",
+      "icon": "archaludon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STEAM_ENGINE": [
+    {
+      "name": "Rolycoly",
+      "icon": "rolycoly",
+      "fallback": true
+    },
+    {
+      "name": "Carkol",
+      "icon": "carkol",
+      "fallback": true
+    },
+    {
+      "name": "Coalossal",
+      "icon": "coalossal",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PUNK_ROCK": [
+    {
+      "name": "Toxtricity",
+      "icon": "toxtricity",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SAND_SPIT": [
+    {
+      "name": "Silicobra",
+      "icon": "silicobra",
+      "fallback": true
+    },
+    {
+      "name": "Sandaconda",
+      "icon": "sandaconda",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ICE_SCALES": [
+    {
+      "name": "Snom",
+      "icon": "snom",
+      "fallback": true
+    },
+    {
+      "name": "Frosmoth",
+      "icon": "frosmoth",
+      "fallback": true
+    }
+  ],
+  "ABILITY_RIPEN": [
+    {
+      "name": "Applin",
+      "icon": "applin",
+      "fallback": true
+    },
+    {
+      "name": "Flapple",
+      "icon": "flapple",
+      "fallback": true
+    },
+    {
+      "name": "Appletun",
+      "icon": "appletun",
+      "fallback": true
+    }
+  ],
+  "ABILITY_POWER_SPOT": [
+    {
+      "name": "Stonjourner",
+      "icon": "stonjourner",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MIMICRY": [
+    {
+      "name": "Stunfisk",
+      "icon": "stunfisk_galar",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SCREEN_CLEANER": [
+    {
+      "name": "Mr. Mime",
+      "icon": "mr_mime_galar",
+      "fallback": true
+    },
+    {
+      "name": "Mr. Rime",
+      "icon": "mr_rime",
+      "fallback": true
+    }
+  ],
+  "ABILITY_STEELY_SPIRIT": [
+    {
+      "name": "Perrserker",
+      "icon": "perrserker",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PERISH_BODY": [
+    {
+      "name": "Cursola",
+      "icon": "cursola",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WANDERING_SPIRIT": [
+    {
+      "name": "Yamask",
+      "icon": "yamask_galar",
+      "fallback": true
+    },
+    {
+      "name": "Runerigus",
+      "icon": "runerigus",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GORILLA_TACTICS": [
+    {
+      "name": "Darmanitan",
+      "icon": "darmanitan_galar_standard",
+      "fallback": true
+    }
+  ],
+  "ABILITY_NEUTRALIZING_GAS": [
+    {
+      "name": "Koffing",
+      "icon": "koffing"
+    },
+    {
+      "name": "Weezing",
+      "icon": "weezing"
+    }
+  ],
+  "ABILITY_PASTEL_VEIL": [
+    {
+      "name": "Ponyta",
+      "icon": "ponyta_galar",
+      "fallback": true
+    },
+    {
+      "name": "Rapidash",
+      "icon": "rapidash_galar",
+      "fallback": true
+    }
+  ],
+  "ABILITY_QUICK_DRAW": [
+    {
+      "name": "Slowbro",
+      "icon": "slowbro_galar",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CURIOUS_MEDICINE": [
+    {
+      "name": "Slowking",
+      "icon": "slowking_galar",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TRANSISTOR": [
+    {
+      "name": "Regieleki",
+      "icon": "regieleki",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DRAGONS_MAW": [
+    {
+      "name": "Regidrago",
+      "icon": "regidrago",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CHILLING_NEIGH": [
+    {
+      "name": "Glastrier",
+      "icon": "glastrier",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GRIM_NEIGH": [
+    {
+      "name": "Spectrier",
+      "icon": "spectrier",
+      "fallback": true
+    }
+  ],
+  "ABILITY_LINGERING_AROMA": [
+    {
+      "name": "Oinkologne",
+      "icon": "oinkologne",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SEED_SOWER": [
+    {
+      "name": "Arboliva",
+      "icon": "arboliva",
+      "fallback": true
+    }
+  ],
+  "ABILITY_THERMAL_EXCHANGE": [
+    {
+      "name": "Frigibax",
+      "icon": "frigibax",
+      "fallback": true
+    },
+    {
+      "name": "Arctibax",
+      "icon": "arctibax",
+      "fallback": true
+    },
+    {
+      "name": "Baxcalibur",
+      "icon": "baxcalibur",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ANGER_SHELL": [
+    {
+      "name": "Klawf",
+      "icon": "klawf",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PURIFYING_SALT": [
+    {
+      "name": "Nacli",
+      "icon": "nacli",
+      "fallback": true
+    },
+    {
+      "name": "Naclstack",
+      "icon": "naclstack",
+      "fallback": true
+    },
+    {
+      "name": "Garganacl",
+      "icon": "garganacl",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WELL_BAKED_BODY": [
+    {
+      "name": "Dachsbun",
+      "icon": "dachsbun",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WIND_RIDER": [
+    {
+      "name": "Shiftry",
+      "icon": "shiftry",
+      "fallback": true
+    },
+    {
+      "name": "Bramblin",
+      "icon": "bramblin",
+      "fallback": true
+    },
+    {
+      "name": "Brambleghast",
+      "icon": "brambleghast",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GUARD_DOG": [
+    {
+      "name": "Mabosstiff",
+      "icon": "mabosstiff",
+      "fallback": true
+    },
+    {
+      "name": "Okidogi",
+      "icon": "okidogi",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ROCKY_PAYLOAD": [
+    {
+      "name": "Bombirdier",
+      "icon": "bombirdier",
+      "fallback": true
+    }
+  ],
+  "ABILITY_WIND_POWER": [
+    {
+      "name": "Wattrel",
+      "icon": "wattrel",
+      "fallback": true
+    },
+    {
+      "name": "Kilowattrel",
+      "icon": "kilowattrel",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ELECTROMORPHOSIS": [
+    {
+      "name": "Bellibolt",
+      "icon": "bellibolt",
+      "fallback": true
+    }
+  ],
+  "ABILITY_PROTOSYNTHESIS": [
+    {
+      "name": "Great Tusk",
+      "icon": "great_tusk",
+      "fallback": true
+    },
+    {
+      "name": "Scream Tail",
+      "icon": "scream_tail",
+      "fallback": true
+    },
+    {
+      "name": "Brute Bonnet",
+      "icon": "brute_bonnet",
+      "fallback": true
+    }
+  ],
+  "ABILITY_QUARK_DRIVE": [
+    {
+      "name": "Iron Treads",
+      "icon": "iron_treads",
+      "fallback": true
+    },
+    {
+      "name": "Iron Bundle",
+      "icon": "iron_bundle",
+      "fallback": true
+    },
+    {
+      "name": "Iron Hands",
+      "icon": "iron_hands",
+      "fallback": true
+    }
+  ],
+  "ABILITY_GOOD_AS_GOLD": [
+    {
+      "name": "Gholdengo",
+      "icon": "gholdengo",
+      "fallback": true
+    }
+  ],
+  "ABILITY_BEADS_OF_RUIN": [
+    {
+      "name": "Chi-Yu",
+      "icon": "chi_yu",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ORICHALCUM_PULSE": [
+    {
+      "name": "Koraidon",
+      "icon": "koraidon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_HADRON_ENGINE": [
+    {
+      "name": "Miraidon",
+      "icon": "miraidon",
+      "fallback": true
+    }
+  ],
+  "ABILITY_OPPORTUNIST": [
+    {
+      "name": "Espathra",
+      "icon": "espathra",
+      "fallback": true
+    }
+  ],
+  "ABILITY_CUD_CHEW": [
+    {
+      "name": "Tauros",
+      "icon": "tauros_paldea_combat",
+      "fallback": true
+    },
+    {
+      "name": "Farigiraf",
+      "icon": "farigiraf",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SHARPNESS": [
+    {
+      "name": "Kleavor",
+      "icon": "kleavor",
+      "fallback": true
+    },
+    {
+      "name": "Gallade",
+      "icon": "gallade",
+      "fallback": true
+    },
+    {
+      "name": "Samurott",
+      "icon": "samurott_hisui",
+      "fallback": true
+    }
+  ],
+  "ABILITY_COSTAR": [
+    {
+      "name": "Flamigo",
+      "icon": "flamigo",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TOXIC_DEBRIS": [
+    {
+      "name": "Glimmet",
+      "icon": "glimmet",
+      "fallback": true
+    },
+    {
+      "name": "Glimmora",
+      "icon": "glimmora",
+      "fallback": true
+    }
+  ],
+  "ABILITY_ARMOR_TAIL": [
+    {
+      "name": "Farigiraf",
+      "icon": "farigiraf",
+      "fallback": true
+    }
+  ],
+  "ABILITY_EARTH_EATER": [
+    {
+      "name": "Orthworm",
+      "icon": "orthworm",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MYCELIUM_MIGHT": [
+    {
+      "name": "Toedscool",
+      "icon": "toedscool",
+      "fallback": true
+    },
+    {
+      "name": "Toedscruel",
+      "icon": "toedscruel",
+      "fallback": true
+    }
+  ],
+  "ABILITY_HOSPITALITY": [
+    {
+      "name": "Poltchageist",
+      "icon": "poltchageist",
+      "fallback": true
+    },
+    {
+      "name": "Sinistcha",
+      "icon": "sinistcha",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TOXIC_CHAIN": [
+    {
+      "name": "Okidogi",
+      "icon": "okidogi",
+      "fallback": true
+    },
+    {
+      "name": "Munkidori",
+      "icon": "munkidori",
+      "fallback": true
+    },
+    {
+      "name": "Fezandipiti",
+      "icon": "fezandipiti",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SUPERSWEET_SYRUP": [
+    {
+      "name": "Dipplin",
+      "icon": "dipplin",
+      "fallback": true
+    },
+    {
+      "name": "Hydrapple",
+      "icon": "hydrapple",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TERA_SHIFT": [
+    {
+      "name": "Terapagos",
+      "icon": "terapagos",
+      "fallback": true
+    }
+  ],
+  "ABILITY_TERA_SHELL": [
+    {
+      "name": "Terapagos",
+      "icon": "terapagos_terastal",
+      "fallback": true
+    }
+  ],
+  "ABILITY_DRAGONIZE": [
+    {
+      "name": "Feraligatr",
+      "icon": "feraligatr_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_MEGA_SOL": [
+    {
+      "name": "Meganium",
+      "icon": "meganium_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_FIRE_MANE": [
+    {
+      "name": "Pyroar",
+      "icon": "pyroar_mega",
+      "fallback": true
+    }
+  ],
+  "ABILITY_SPICY_SPRAY": [
+    {
+      "name": "Scovillain",
+      "icon": "scovillain_mega",
+      "fallback": true
+    }
+  ]
+}
